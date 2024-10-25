@@ -54,7 +54,7 @@ public class CommonGuiItem {
      * @return Item
      */
     public static GuiItem getPreviousPageItem(ToolsObjectWrapper wrapper, PagedGuiContainer pagedGuiContainer) {
-        Material material = Material.ARROW;
+        Material material = Material.RED_CONCRETE;
         try {
             material = Material.valueOf(wrapper.getKTools().getConfig().getString("gui.pages.leftItem").toUpperCase());
         } catch (Exception e) {}
@@ -75,7 +75,7 @@ public class CommonGuiItem {
      * @return Item
      */
     public static GuiItem getNextPageItem(ToolsObjectWrapper wrapper, PagedGuiContainer pagedGuiContainer) {
-        Material material = Material.ARROW;
+        Material material = Material.GREEN_CONCRETE;
         try {
             material = Material.valueOf(wrapper.getKTools().getConfig().getString("gui.pages.rightItem").toUpperCase());
         } catch (Exception e) {}
